@@ -2079,6 +2079,106 @@
 		max-height: 391px;
 		width: 100%;
 		height: 100%;
+		transition: 2s;
+
+		&__color {
+			animation-name: color;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+		}
+		&__color {
+			fill: pink;
+			animation-name: color;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes color{
+			0% {
+	
+			}
+			50% {
+				stroke: pink;
+			}
+			100% {
+
+			}
+		}
+		&__fill {
+			animation-name: fill;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes fill {
+			0% {
+	
+			}
+			50% {
+				fill: #686cd4fb;
+			}
+			100% {
+
+			}
+		}
+
+		&__bgr-light {
+			fill: #E6E9ED;
+			animation-name: bgr-light;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes bgr-light {
+			0% {
+				fill: #E6E9ED;
+			}
+			50% {
+				fill: #878787;
+			}
+			100% {
+				fill: #e6e9ed;
+			}
+		}
+
+		&__sky {
+			fill: pink;
+			animation-name: svg-sky;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes svg-sky {
+			0% {
+				fill: #5D9CEC;
+			}
+			50% {
+				fill: #000000;
+			} 
+			100% {
+				fill: #5D9CEC;
+			}
+		}
+
+		&__sun {
+			fill: #FFCE54;
+			animation-name: svg-sun;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes svg-sun {
+			0% {
+				fill: #FFCE54;
+			}
+			50% {
+				fill: #faf8d8;
+			} 
+			100% {
+				fill: #FFCE54;
+			}
+		}
+
+	}
+	.svg:hover {
+		transform: scale(1.2);
 	}
 }
 
